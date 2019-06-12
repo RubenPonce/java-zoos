@@ -13,13 +13,45 @@ public class Telephone {
     private String phonetype;
     private String phonenumber;
 
-    @OneToMany(mappedBy = "zooid")
-    private Zoo zoo;
+    @OneToMany(mappedBy = "telephone")
+    private Telephone telephone;
 
     public Telephone() {
     }
 
     public Telephone(String phonenumber) {
         this.phonenumber = phonenumber;
+    }
+
+    public long getTelephoneid() {
+        return telephoneid;
+    }
+
+    public void setTelephoneid(long telephoneid) {
+        this.telephoneid = telephoneid;
+    }
+
+    public String getPhonetype() {
+        return phonetype;
+    }
+
+    public void setPhonetype(String phonetype) {
+        this.phonetype = phonetype;
+    }
+
+    public String getPhonenumber() {
+        return phonenumber;
+    }
+
+    public void setPhonenumber(String phonenumber) {
+        this.phonenumber = phonenumber;
+    }
+
+    public Telephone getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(Telephone telephone) {
+        this.telephone = telephone;
     }
 }

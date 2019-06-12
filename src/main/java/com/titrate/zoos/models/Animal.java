@@ -12,4 +12,28 @@ public class Animal {
     @ManyToMany
     @JoinTable(name="zooanimals", joinColumns = {@JoinColumn(name="animalid")}, inverseJoinColumns = {@JoinColumn(name = "zooid")} )
     ArrayList<Zoo> zoos = new ArrayList<>();
+
+    public long getAnimalid() {
+        return animalid;
+    }
+
+    public void setAnimalid(long animalid) {
+        this.animalid = animalid;
+    }
+
+    public String getAnimalType() {
+        return animalType;
+    }
+
+    public void setAnimalType(String animalType) {
+        this.animalType = animalType;
+    }
+
+    public ArrayList<Zoo> getZoos() {
+        return zoos;
+    }
+
+    public void setZoos(ArrayList<Zoo> zoos) {
+        this.zoos = zoos;
+    }
 }

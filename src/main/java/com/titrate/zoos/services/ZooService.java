@@ -9,5 +9,5 @@ public interface ZooService {
 
     void delete(long id);
 
-//    ArrayList<CountStudentsInCourses> getCountStudentsInCourses();
+    ArrayList<Zoo> getCountStudentsInCourses();
 }
