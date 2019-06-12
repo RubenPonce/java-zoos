@@ -13,4 +13,10 @@ public class Zoo {
     @JoinColumn(name="telephoneid")
     private Telephone telephone;
 
+    public Zoo() {
+    }
+
+    public Zoo(String zooname) {
+        this.zooname = zooname;
+    }
 }

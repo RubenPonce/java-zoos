@@ -15,4 +15,11 @@ public class Telephone {
 
     @OneToMany(mappedBy = "zooid")
     private Zoo zoo;
+
+    public Telephone() {
+    }
+
+    public Telephone(String phonenumber) {
+        this.phonenumber = phonenumber;
+    }
 }
